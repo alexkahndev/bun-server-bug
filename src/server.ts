@@ -3,7 +3,7 @@ import { staticPlugin } from "@elysiajs/static";
 import { renderToReadableStream } from "react-dom/server";
 import { swagger } from "@elysiajs/swagger";
 import { createElement } from "react";
-import { neon } from '@neondatabase/serverless';
+import { neon } from "@neondatabase/serverless";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Help from "./pages/Help";
@@ -15,7 +15,7 @@ await Bun.build({
   entrypoints: [
     "./src/indexes/HomeIndex.tsx",
     "./src/indexes/AboutIndex.tsx",
-    "./src/indexes/HelpIndex.tsx"
+    "./src/indexes/HelpIndex.tsx",
   ],
   outdir: "./build",
   minify: true,
@@ -40,7 +40,7 @@ async function handleRequest(
 if (Bun.env.DATABASE_URL) {
   const sql = neon(Bun.env.DATABASE_URL); // This line causes the error
 } else {
-  console.error('DATABASE_URL is not defined');
+  console.error("DATABASE_URL is not defined");
 }
 
 export const server = new Elysia()

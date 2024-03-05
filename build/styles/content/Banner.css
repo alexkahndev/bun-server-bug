@@ -1,118 +1,112 @@
 .banner {
-    padding: 5svh 2.5svw;
-    text-wrap: balance;
- }
+  padding: 5svh 2.5svw;
+  text-wrap: balance;
+}
 
- .content1{
-    padding: 5vh 20vw;
- }
- .text-regular-semi-bold {
-    font-size: 16px;
-    font-style: normal;
-    font-family: Roboto;
-    font-weight: 300px;
-    font-stretch: normal;
-    padding-left: 50px;
-    color: rgba(0, 0, 0, 1);
+.content1 {
+  padding: 5vh 20vw;
+}
+.text-regular-semi-bold {
+  font-size: 16px;
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 300px;
+  font-stretch: normal;
+  padding-left: 50px;
+  color: rgba(0, 0, 0, 1);
   height: auto;
   text-align: center;
   line-height: 150%;
-    
-  }
+}
 
-  .banner-content {
-    padding: 5vh 20vw;
-    gap: 24px;
+.banner-content {
+  padding: 5vh 20vw;
+  gap: 24px;
   width: 616px;
   display: flex;
   flex-grow: 1;
   align-items: flex-start;
   flex-shrink: 0;
   flex-direction: column;
-  
-  
-  }
- 
- .banner h2 {
-     margin:0;
-     text-align: center;
-     font-size: 3.5rem;
-     color: var(--primary-color);
- }
-
- .banner p {
-    margin:0;
-    text-align: center;
-    color: var(--primary-color);
 }
- 
- .overallBanner{
-    
-     margin-top: 2.5svh;
-     background-color: white;
-     border: 1svmin solid var(--primary-color);
-     border-radius: 2.5svmin;
-     text-align: center;
-     
- }
- 
- .banner section article {
-     padding: 2.5svmin;
-     
- }
- .column {
- display: flex;
- }
- .banner section article img {
-     height: 10svh;
- }
- .banner section article h3 {
-     margin: 0;
-     font-size: 2rem;
-     color: var(--primary-color);
- }
- 
- .banner section article p {
-     font-size: 1.25rem;
-     color: var(--quaternary-color);
-    
- }
- 
- 
- .button {
-    gap: 16px;
-    display: flex;
-    align-items: flex-start;
-    display: inline-block;
-    padding: 20px 40px;
-    text-decoration: none;
-    border: 2px solid;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    text-align: center;
-    transition: background-color 0.3s, color 0.3s;
-    margin-left: 50px;
-    margin-top: 30px; 
-  }
-  
-  .white-button {
-    background-color: white;
-    color: black;
-    border-color: black;
-    color: rgba(0, 0, 0, 1);
-    height: auto;
-    font-size: 20px;
-    font-style: Regular;
-    text-align: left;
-    font-family: Roboto;
-    font-weight: 400;
-    line-height: 150%;
-    font-stretch: normal;
-    text-decoration: none;
-  }
-  
+
+.banner h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 3.5rem;
+  color: var(--primary-color);
+}
+
+.banner p {
+  margin: 0;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.overallBanner {
+  margin-top: 2.5svh;
+  background-color: white;
+  border: 1svmin solid var(--primary-color);
+  border-radius: 2.5svmin;
+  text-align: center;
+}
+
+.banner section article {
+  padding: 2.5svmin;
+}
+.column {
+  display: flex;
+}
+.banner section article img {
+  height: 10svh;
+}
+.banner section article h3 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.banner section article p {
+  font-size: 1.25rem;
+  color: var(--quaternary-color);
+}
+
+.button {
+  gap: 16px;
+  display: flex;
+  align-items: flex-start;
+  display: inline-block;
+  padding: 20px 40px;
+  text-decoration: none;
+  border: 2px solid;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.white-button {
+  background-color: white;
+  color: black;
+  border-color: black;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  font-size: 20px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
 .button:hover {
-    background-color: #333; 
-    color: white;
+  background-color: #333;
+  color: white;
 }

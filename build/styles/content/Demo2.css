@@ -1,21 +1,19 @@
 .demo2 {
-    gap: 24px;
-    display: flex;
-    padding: 0 80px 0 0;
-    align-items: center;
-    justify-content: space-between;
+  gap: 24px;
+  display: flex;
+  padding: 0 80px 0 0;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .demo2 section {
-    width: 50%;
+  width: 50%;
 }
 
 .demo2 video {
-    width: 50%;
-    height: auto;
+  width: 50%;
+  height: auto;
 }
-
-  
 
 .demo2 h2 {
   color: rgba(0, 0, 0, 1);
@@ -31,7 +29,7 @@
   text-decoration: none;
   padding-left: 50px;
 }
- 
+
 .demo2 p {
   color: rgba(0, 0, 0, 1);
   height: auto;
@@ -48,7 +46,6 @@
   font-weight: 600px;
   font-stretch: normal;
   padding-left: 50px;
-  
 }
 
 .list {
@@ -97,7 +94,6 @@
 }
 
 .list-item1 {
-  
   gap: 16px;
   width: 296px;
   display: flex;

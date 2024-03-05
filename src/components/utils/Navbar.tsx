@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import Help from "../../pages/Help"
+import Help from "../../pages/Help";
 
 export const Navbar = () => {
-  
   const [showPopup, setShowPopup] = useState(false);
 
   const handleHelpClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
@@ -14,16 +13,17 @@ export const Navbar = () => {
     setShowPopup(false);
   };
 
-
   return (
     <header className="navbar">
       <nav>
-        <div className = "option">
-          <a href="/designstudio" >Design Studio</a>
-          <a href="/about" >About</a>
-          <a href="/help" onClick={handleHelpClick}>Help</a>
+        <div className="option">
+          <a href="/designstudio">Design Studio</a>
+          <a href="/about">About</a>
+          <a href="/help" onClick={handleHelpClick}>
+            Help
+          </a>
 
-          <a href="/pricing" >Pricing</a>
+          <a href="/pricing">Pricing</a>
         </div>
         <a href="/">
           <img src="/assets/brand_logo.svg" alt="Home" />
@@ -36,12 +36,9 @@ export const Navbar = () => {
             Register
           </a>
         </div>
-        
       </nav>
-      
-      {showPopup && (
-            <Help />
-      )}
+
+      {showPopup && <Help />}
     </header>
   );
 };

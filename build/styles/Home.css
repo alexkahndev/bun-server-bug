@@ -4,19 +4,19 @@
 @import url(./content/Demo2.css);
 @import url(./content/Banner.css);
 @import url(./content/Testimonials.css);
-@import url('https://fonts.googleapis.com/css?family=Figtree&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Figtree&display=swap");
 
 :root {
-    --primary-color: #000000;
-    --secondary-color: #000000;
-    --tertiary-color: #ffffff;
-    --quaternary-color: #333;
-    --font-family: 'Figtree', sans-serif;
+  --primary-color: #000000;
+  --secondary-color: #000000;
+  --tertiary-color: #ffffff;
+  --quaternary-color: #333;
+  --font-family: "Figtree", sans-serif;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: var(--font-family);
-    background-color: var(--tertiary-color);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background-color: var(--tertiary-color);
 }

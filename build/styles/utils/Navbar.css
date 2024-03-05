@@ -1,9 +1,8 @@
 .navbar {
-  box-shadow: 0 2svh 4svh 0 rgba(0,0,0,0.06);
+  box-shadow: 0 2svh 4svh 0 rgba(0, 0, 0, 0.06);
 }
 
-
-.option a{
+.option a {
   margin-right: 30px;
 }
 .navbar nav {
@@ -20,14 +19,12 @@
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease;
-  
 }
 
 .navbar nav a img {
   width: 35vw;
   margin: 0 auto; /* Center horizontally */
   display: block; /* Ensure the image is a block-level element for margin: auto; to work */
-
 }
 
 .navbar nav a:hover {
@@ -36,7 +33,7 @@
 
 /*.navbar nav a:not(:first-child)::after { */
 .navbar nav a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -66,7 +63,6 @@
   color: var(--secondary-color);
   background-color: #02074c;
 }
-
 
 .right-buttons {
   display: flex;

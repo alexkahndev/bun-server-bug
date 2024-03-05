@@ -9,8 +9,6 @@ const Help = () => {
     setTrigger(false);
   };
 
-  
-
   return (
     <html>
       <head>
@@ -22,25 +20,22 @@ const Help = () => {
         <link rel="icon" href="/assets/favicon.ico" />
       </head>
       <body>
-      {trigger && (
-        <div className="modal-overlay">
-        <div className="modal-content">
-          <h2>Help</h2>
-          <div className="help-container">
-              <div className="info">
-              <h3>This is help popup</h3>
+        {trigger && (
+          <div className="modal-overlay">
+            <div className="modal-content">
+              <h2>Help</h2>
+              <div className="help-container">
+                <div className="info">
+                  <h3>This is help popup</h3>
+                </div>
+              </div>
+              {/* Close button for the help modal */}
+              <button className="close" onClick={closePopup}>
+                X
+              </button>
             </div>
-          
-        </div>
-        {/* Close button for the help modal */}
-        <button className="close" onClick={closePopup}>
-              X
-            </button>
-      </div>
-    </div>
-  )}
-
-        
+          </div>
+        )}
       </body>
     </html>
   );
