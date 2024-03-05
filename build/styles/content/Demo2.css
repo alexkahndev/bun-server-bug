@@ -1,0 +1,151 @@
+.demo2 {
+    gap: 24px;
+    display: flex;
+    padding: 0 80px 0 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.demo2 section {
+    width: 50%;
+}
+
+.demo2 video {
+    width: 50%;
+    height: auto;
+}
+
+  
+
+.demo2 h2 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  font-size: 56px;
+  align-self: stretch;
+  font-style: Bold;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 120%;
+  font-stretch: normal;
+  text-decoration: none;
+  padding-left: 50px;
+}
+ 
+.demo2 p {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  align-self: stretch;
+  text-align: left;
+  line-height: 150%;
+  padding-left: 50px;
+}
+
+.text-regular-semi-bold {
+  font-size: 16px;
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 600px;
+  font-stretch: normal;
+  padding-left: 50px;
+  
+}
+
+.list {
+  gap: 24px;
+  display: flex;
+  padding: 8px 0;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.list-item {
+  gap: 16px;
+  width: 296px;
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+
+.icon-relume {
+  padding-left: 50px;
+  width: 48px;
+  height: 48px;
+}
+
+.text06 {
+  padding-left: 50px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  align-self: stretch;
+  text-align: left;
+  line-height: 150%;
+  padding-left: 50px;
+}
+
+.text08 {
+  padding-left: 50px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  align-self: stretch;
+  text-align: left;
+  line-height: 150%;
+  padding-left: 50px;
+}
+
+.list-item1 {
+  
+  gap: 16px;
+  width: 296px;
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+
+.icon-relume1 {
+  width: 48px;
+  height: 48px;
+}
+
+.text10 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  font-size: 20px;
+  align-self: stretch;
+  font-style: Bold;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 139.9999976158142%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.text11 {
+  padding-left: 50px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  font-size: 20px;
+  align-self: stretch;
+  font-style: Bold;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 139.9999976158142%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.TextRegularNormal {
+  padding-left: 50px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 400px;
+  font-stretch: normal;
+}

@@ -1,0 +1,68 @@
+@import url(./utils/Navbar.css);
+@import url(./utils/Footer.css);
+@import url(./content/Demo.css);
+@import url('https://fonts.googleapis.com/css?family=Figtree&display=swap');
+
+:root{
+    --primary-color: #082567;
+    --secondary-color: #ffd500;
+    --tertiary-color: #f0f0f0;
+    --quaternary-color: #333;
+    --font-family: 'Figtree', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background-color: var(--tertiary-color);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.content{
+    background-color: #f0f0f0;
+    border-radius: 0.625em;
+    padding: 1.5em;
+    margin: 1.25em;
+    text-align: center;
+    box-shadow: 0 0 0.9375em 0.3125em rgba(0, 0, 255, 0.1);
+}
+.start-container{
+    margin-bottom: 2em;
+}
+.start-button{
+    background-color: black;
+    font-size: 1.25em;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 1.5em;
+    cursor: pointer;
+}
+.image-upload {
+    margin-top: 1em;
+}
+/* input[type="file"] {
+    display: none;
+} */
+.browse-button{
+    background-color: black;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 1.5em;
+    cursor: pointer;
+}
+.image-preview{
+    margin-top: 1em;
+    background-color: #333;
+}
+.image-preview img{
+    max-width: 100%;
+    max-height: 300px;
+    min-width: 100px;
+    min-height: 100px; 
+}
+

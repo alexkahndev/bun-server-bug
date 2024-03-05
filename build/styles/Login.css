@@ -1,0 +1,71 @@
+@import url(./utils/Navbar.css);
+@import url(./utils/Footer.css);
+@import url(./content/Demo.css);
+@import url('https://fonts.googleapis.com/css?family=Figtree&display=swap');
+
+:root{
+    --primary-color: #082567;
+    --secondary-color: #ffd500;
+    --tertiary-color: #f0f0f0;
+    --quaternary-color: #333;
+    --font-family: 'Figtree', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background-color: var(--tertiary-color);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+.content {
+background-color: #f0f0f0;
+border-radius: 0.625em;
+padding: 1.5em;
+margin: 1.25em;
+text-align: center;
+box-shadow: 0 0 0.9375em 0.3125em rgba(0, 0, 255, 0.1);
+}
+
+h2 {
+text-align: left;
+}
+
+h3 {
+text-align: left;
+}
+
+.input-container {
+width: 100%;
+padding: 0.5em 0.25em;
+border-radius: 0.625em;
+background-color: white;
+box-shadow: 0 0 0.9375em 0.3125em rgba(0, 0, 255, 0.1);
+margin: auto;
+margin-top: 1em;
+margin-left: 0.1em;
+}
+
+.username-input,
+.password-input {
+width: calc(100% - 0.5em);
+padding: 0.5em;
+border: none;
+border-radius: 0.625em;
+outline: none;
+}
+.login-button{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    padding: 0.75em 1.5em;
+    margin-top: 1em;
+    cursor: pointer;
+    width: 66.666%; /* 2/3 width */
+}
