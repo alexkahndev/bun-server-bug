@@ -3,7 +3,7 @@ import { staticPlugin } from "@elysiajs/static";
 import { renderToReadableStream } from "react-dom/server";
 import { swagger } from "@elysiajs/swagger";
 import { createElement } from "react";
-import { neon } from "@neondatabase/serverless";
+import { Pool } from 'pg'
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Help from "./pages/Help";
@@ -21,6 +21,27 @@ await Bun.build({
   minify: true,
 });
 
+const pool = new Pool({
+  connectionString: Bun.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false
+  }
+})
+
+// Test the database connection
+pool.connect((err, client, release) => {
+  if (err) {
+    return console.error('Error acquiring client', err.stack)
+  }
+  client.query('SELECT NOW()', (err, result) => {
+    release()
+    if (err) {
+      return console.error('Error executing query', err.stack)
+    }
+    console.log(result.rows)
+  })
+})
+
 const doYouLikeSwaggerUIBetter = false;
 
 async function handleRequest(
@@ -35,12 +56,6 @@ async function handleRequest(
   return new Response(stream, {
     headers: { "Content-Type": "text/html" },
   });
-}
-
-if (Bun.env.DATABASE_URL) {
-  const sql = neon(Bun.env.DATABASE_URL); // This line causes the error
-} else {
-  console.error("DATABASE_URL is not defined");
 }
 
 export const server = new Elysia()
