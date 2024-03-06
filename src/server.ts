@@ -21,6 +21,18 @@ await Bun.build({
   minify: true,
 });
 
+if (Bun.env.DATABASE_URL) {
+  try {
+    const sql = neon(Bun.env.DATABASE_URL);
+    console.log("Connected to the database");
+  } catch (error) {
+    console.error("Failed to connect to the database", error);
+  }
+  
+} else {
+  console.error("DATABASE_URL is not defined");
+}
+
 const doYouLikeSwaggerUIBetter = false;
 
 async function handleRequest(
